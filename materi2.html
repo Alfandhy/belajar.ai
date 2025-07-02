@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Dasar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a more techy look */
+        ::-webkit-scrollbar {
+            width: 8px;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #3b82f6; /* Blue scrollbar thumb */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #2563eb; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-blue-700 text-white shadow-lg py-6 px-4 md:px-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mb-0">
+                <span class="text-blue-200"></span> Machine Learning Dasar
+            </h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#pengenalan" class="hover:text-blue-200 transition duration-300">Pengenalan</a></li>
+                    <li><a href="#supervised" class="hover:text-blue-200 transition duration-300">Supervised</a></li>
+                    <li><a href="#unsupervised" class="hover:text-blue-200 transition duration-300">Unsupervised</a></li>
+                    <li><a href="#reinforcement" class="hover:text-blue-200 transition duration-300">Reinforcement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Introduction Section -->
+        <section id="pengenalan" class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-8 border-l-4 border-blue-500">
+            <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-4 flex items-center">
+                <span class="text-blue-500 mr-2 text-3xl">&#9679;</span> Pengenalan Machine Learning
+            </h2>
+            <p class="mb-4 leading-relaxed">
+                Machine Learning (Pembelajaran Mesin) adalah cabang dari kecerdasan buatan (AI) yang memungkinkan sistem untuk belajar dari data, mengidentifikasi pola, dan membuat keputusan dengan intervensi manusia yang minimal. Ini adalah inti dari banyak teknologi modern, mulai dari rekomendasi produk hingga mobil tanpa pengemudi.
+            </p>
+            <p class="leading-relaxed">
+                Tujuan utama Machine Learning adalah untuk membuat model yang dapat melakukan tugas tertentu berdasarkan data yang telah dipelajari, tanpa harus diprogram secara eksplisit untuk setiap tugas. Ini dicapai melalui algoritma yang secara iteratif belajar dari data, menyesuaikan parameternya untuk meningkatkan kinerja seiring waktu.
+            </p>
+        </section>
+
+        <!-- Supervised Learning Section -->
+        <section id="supervised" class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-8 border-l-4 border-blue-500">
+            <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-4 flex items-center">
+                <span class="text-blue-500 mr-2 text-3xl">&#9679;</span> Supervised Learning
+            </h2>
+            <p class="mb-4 leading-relaxed">
+                Supervised Learning adalah jenis pembelajaran mesin di mana model dilatih menggunakan "data berlabel". Ini berarti setiap data input memiliki output yang sesuai atau "label" yang benar. Model belajar memetakan input ke output berdasarkan contoh-contoh ini.
+            </p>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Konsep Utama:</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li>
+                    <strong>Klasifikasi:</strong> Digunakan ketika output adalah kategori diskrit. Contoh: memprediksi apakah email adalah spam atau bukan (ya/tidak), mengidentifikasi jenis hewan dari gambar (kucing/anjing/burung).
+                </li>
+                <li>
+                    <strong>Regresi:</strong> Digunakan ketika output adalah nilai kontinu. Contoh: memprediksi harga rumah berdasarkan luas dan lokasi, memprediksi suhu besok.
+                </li>
+            </ul>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Bagaimana Cara Kerjanya?</h3>
+            <p class="mb-4 leading-relaxed">
+                Model dilatih dengan pasangan input-output. Ia mencoba menemukan hubungan atau pola antara input dan label yang benar. Setelah pelatihan, model dapat digunakan untuk memprediksi label untuk data input baru yang belum pernah dilihat sebelumnya.
+            </p>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Contoh Algoritma:</h3>
+            <ul class="list-disc list-inside ml-4 space-y-2">
+                <li>Regresi Linear</li>
+                <li>Support Vector Machines (SVM)</li>
+                <li>Decision Trees</li>
+                <li>Random Forests</li>
+                <li>Neural Networks (untuk klasifikasi/regresi)</li>
+            </ul>
+        </section>
+
+        <!-- Unsupervised Learning Section -->
+        <section id="unsupervised" class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-8 border-l-4 border-blue-500">
+            <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-4 flex items-center">
+                <span class="text-blue-500 mr-2 text-3xl">&#9679;</span> Unsupervised Learning
+            </h2>
+            <p class="mb-4 leading-relaxed">
+                Unsupervised Learning adalah jenis pembelajaran mesin di mana model dilatih menggunakan "data tanpa label". Ini berarti tidak ada output yang benar yang diberikan. Model harus menemukan struktur, pola, atau hubungan tersembunyi dalam data itu sendiri.
+            </p>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Konsep Utama:</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li>
+                    <strong>Clustering (Pengelompokan):</strong> Mengelompokkan titik data serupa menjadi kelompok atau klaster. Contoh: segmentasi pelanggan berdasarkan perilaku pembelian, pengelompokan dokumen berdasarkan topik.
+                </li>
+                <li>
+                    <strong>Dimensionality Reduction (Pengurangan Dimensi):</strong> Mengurangi jumlah fitur atau variabel dalam dataset sambil mempertahankan informasi penting. Contoh: Principal Component Analysis (PCA) untuk visualisasi data atau pra-pemrosesan.
+                </li>
+                <li>
+                    <strong>Association Rule Mining:</strong> Menemukan hubungan atau aturan antara variabel dalam dataset besar. Contoh: "pelanggan yang membeli roti juga cenderung membeli susu".
+                </li>
+            </ul>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Bagaimana Cara Kerjanya?</h3>
+            <p class="mb-4 leading-relaxed">
+                Model menganalisis data untuk mengidentifikasi kesamaan dan perbedaan, kemudian mengorganisir data berdasarkan struktur internal yang ditemukannya. Ini sering digunakan untuk eksplorasi data, pra-pemrosesan, atau untuk menemukan wawasan baru.
+            </p>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Contoh Algoritma:</h3>
+            <ul class="list-disc list-inside ml-4 space-y-2">
+                <li>K-Means Clustering</li>
+                <li>Hierarchical Clustering</li>
+                <li>Principal Component Analysis (PCA)</li>
+                <li>Independent Component Analysis (ICA)</li>
+            </ul>
+        </section>
+
+        <!-- Reinforcement Learning Section -->
+        <section id="reinforcement" class="bg-white rounded-xl shadow-md p-6 md:p-8 border-l-4 border-blue-500">
+            <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-4 flex items-center">
+                <span class="text-blue-500 mr-2 text-3xl">&#9679;</span> Reinforcement Learning
+            </h2>
+            <p class="mb-4 leading-relaxed">
+                Reinforcement Learning (RL) adalah jenis pembelajaran mesin di mana agen belajar membuat keputusan dengan melakukan tindakan dalam suatu lingkungan untuk memaksimalkan "hadiah" kumulatif. Agen tidak diberi label data, melainkan belajar melalui coba-coba.
+            </p>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Konsep Utama:</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li>
+                    <strong>Agen:</strong> Entitas yang belajar dan membuat keputusan.
+                </li>
+                <li>
+                    <strong>Lingkungan:</strong> Dunia tempat agen berinteraksi.
+                </li>
+                <li>
+                    <strong>Keadaan (State):</strong> Situasi saat ini dari lingkungan.
+                </li>
+                <li>
+                    <strong>Tindakan (Action):</strong> Apa yang dapat dilakukan agen dalam suatu keadaan.
+                </li>
+                <li>
+                    <strong>Hadiah (Reward):</strong> Umpan balik positif atau negatif yang diterima agen setelah melakukan tindakan.
+                </li>
+                <li>
+                    <strong>Kebijakan (Policy):</strong> Strategi yang digunakan agen untuk memilih tindakan dalam suatu keadaan.
+                </li>
+            </ul>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Bagaimana Cara Kerjanya?</h3>
+            <p class="mb-4 leading-relaxed">
+                Agen melakukan tindakan di lingkungan, menerima hadiah (atau penalti) dan berpindah ke keadaan baru. Melalui banyak iterasi, agen belajar kebijakan optimal yang memberitahunya tindakan terbaik untuk diambil di setiap keadaan untuk memaksimalkan total hadiah jangka panjang.
+            </p>
+            <h3 class="text-xl md:text-2xl font-medium text-blue-700 mb-3">Contoh Aplikasi:</h3>
+            <ul class="list-disc list-inside ml-4 space-y-2">
+                <li>Bermain game (AlphaGo, DeepMind's Atari games)</li>
+                <li>Robotika (mengajarkan robot untuk melakukan tugas)</li>
+                <li>Sistem rekomendasi</li>
+                <li>Manajemen sumber daya</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-800 text-white py-6 px-4 md:px-8 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Pembelajaran Machine Learning. Dibuat dengan <span class="text-red-400">&hearts;</span> untuk edukasi.</p>
+            <p class="text-sm mt-2">Desain dengan aksen teknologi dan warna biru-putih.</p>
+        </div>
+    </footer>
+</body>
+</html>
