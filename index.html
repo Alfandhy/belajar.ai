@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Artificial Intelligence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #10b981);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.85;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .materi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .materi-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .materi-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            background-color: #e6f3ff;
+        }
+
+        .materi-card .emoji {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .materi-card:hover .emoji {
+            transform: scale(1.2);
+        }
+
+        .materi-card a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .materi-card a:hover {
+            color: #10b981;
+        }
+
+        .materi-card p {
+            color: #555;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #1e3a8a;
+            color: white;
+            margin-top: 3rem;
+            border-top: 4px solid #10b981;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .materi-card {
+                padding: 1rem;
+            }
+
+            .materi-card .emoji {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌟 Materi Artificial Intelligence 🌟</h1>
+        <p>🧠 Eksplorasi 30 topik seru tentang AI untuk pemula hingga mahir!</p>
+    </header>
+
+    <div class="container">
+        <div class="materi-grid">
+            <div class="materi-card">
+                <span class="emoji">🤖</span>
+                <a href="materi1.html">1. Pengenalan ke AI</a>
+                <p>Memahami definisi, sejarah, dan perkembangan AI.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">📚</span>
+                <a href="materi2.html">2. Machine Learning Dasar</a>
+                <p>Konsep supervised, unsupervised, dan reinforcement learning.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🧠</span>
+                <a href="materi3.html">3. Deep Learning</a>
+                <p>Arsitektur neural network dan aplikasi deep learning.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">💬</span>
+                <a href="materi4.html">4. Natural Language Processing (NLP)</a>
+                <p>Pemrosesan bahasa alami untuk chatbots dan analisis teks.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">👁️</span>
+                <a href="materi5.html">5. Computer Vision</a>
+                <p>Pengenalan gambar, deteksi objek, dan pengenalan wajah.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🔍</span>
+                <a href="materi6.html">6. Algoritma AI Klasik</a>
+                <p>Pencarian, A*, dan algoritma genetik.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🧹</span>
+                <a href="materi7.html">7. Data Preprocessing</a>
+                <p>Pembersihan data, normalisasi, dan pengelolaan data besar.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">📊</span>
+                <a href="materi8.html">8. Supervised Learning</a>
+                <p>Regresi linier, regresi logistik, dan SVM.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🧩</span>
+                <a href="materi9.html">9. Unsupervised Learning</a>
+                <p>Clustering (K-Means, DBSCAN) dan reduksi dimensi.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🎮</span>
+                <a href="materi10.html">10. Reinforcement Learning</a>
+                <p>Q-Learning, Deep Q-Networks, dan aplikasi di game.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🔗</span>
+                <a href="materi11.html">11. Neural Networks</a>
+                <p>Backpropagation, activation functions, dan optimasi.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🖼️</span>
+                <a href="materi12.html">12. Convolutional Neural Networks (CNN)</a>
+                <p>Aplikasi pada pengolahan gambar dan video.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🔄</span>
+                <a href="materi13.html">13. Recurrent Neural Networks (RNN)</a>
+                <p>LSTM, GRU, dan aplikasi pada data berurutan.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">✨</span>
+                <a href="materi14.html">14. Generative AI</a>
+                <p>Model seperti GANs dan VAEs.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🚀</span>
+                <a href="materi15.html">15. Transfer Learning</a>
+                <p>Penggunaan model pra-latih untuk tugas spesifik.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">⚖️</span>
+                <a href="materi16.html">16. AI Ethics</a>
+                <p>Bias, privasi, dan tanggung jawab etis dalam AI.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🔎</span>
+                <a href="materi17.html">17. Explainable AI (XAI)</a>
+                <p>Membuat model AI yang transparan dan dapat dijelaskan.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🏥</span>
+                <a href="materi18.html">18. AI dalam Kesehatan</a>
+                <p>Diagnostik medis dan analisis citra medis.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">💸</span>
+                <a href="materi19.html">19. AI dalam Keuangan</a>
+                <p>Deteksi penipuan dan trading algoritmik.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🤖</span>
+                <a href="materi20.html">20. AI untuk Otomasi</a>
+                <p>Robotika, kendaraan otonom, dan otomasi industri.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">📈</span>
+                <a href="materi21.html">21. Big Data dan AI</a>
+                <p>Integrasi AI dengan analitik data besar.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🎓</span>
+                <a href="materi22.html">22. AI di Pendidikan</a>
+                <p>Sistem pembelajaran adaptif dan tutor virtual.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🌐</span>
+                <a href="materi23.html">23. AI dan IoT</a>
+                <p>Integrasi AI dengan Internet of Things.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🔒</span>
+                <a href="materi24.html">24. AI dalam Keamanan Siber</a>
+                <p>Deteksi ancaman dan analisis malware.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">📱</span>
+                <a href="materi25.html">25. Edge AI</a>
+                <p>AI pada perangkat edge untuk pemrosesan real-time.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🎨</span>
+                <a href="materi26.html">26. AI dan Kreativitas</a>
+                <p>Seni generatif, musik AI, dan penulisan kreatif.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🔗</span>
+                <a href="materi27.html">27. Federated Learning</a>
+                <p>Pembelajaran mesin terdistribusi dengan privasi data.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">😊</span>
+                <a href="materi28.html">28. AI untuk Analisis Sentimen</a>
+                <p>Pemahaman emosi dan opini dari teks.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">⚡</span>
+                <a href="materi29.html">29. Transformers</a>
+                <p>Arsitektur model seperti BERT dan GPT untuk NLP.</p>
+            </div>
+            <div class="materi-card">
+                <span class="emoji">🎮</span>
+                <a href="materi30.html">30. AI di Gaming</a>
+                <p>NPC cerdas, simulasi dunia, dan strategi permainan.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Materi AI 🚀 | Dibuat dengan ❤️ untuk pembelajaran dan inovasi</p>
+    </footer>
+</body>
+</html>
