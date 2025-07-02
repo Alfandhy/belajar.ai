@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan ke AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and subtle tech accents */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background for tech feel */
+            color: #e0e6ed; /* Light text color */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #1a202c, #2a4365); /* Dark blue gradient */
+        }
+        .tech-accent {
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.5); /* Glowing blue shadow */
+            border: 1px solid rgba(0, 191, 255, 0.3);
+        }
+        .section-header {
+            border-bottom: 2px solid #00bfff; /* Bright blue underline */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #00bfff; /* Bright blue on hover */
+            transform: translateY(-2px);
+        }
+        .card {
+            background-color: #1f2937; /* Slightly lighter dark background for cards */
+            border: 1px solid rgba(0, 191, 255, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 191, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <header class="gradient-bg py-6 shadow-lg rounded-b-lg tech-accent">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-bold text-white mb-4 md:mb-0">
+                <span class="text-blue-400">AI</span> Learning Hub
+            </h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#definisi" class="nav-link text-white hover:text-blue-400">Definisi</a></li>
+                    <li><a href="#sejarah" class="nav-link text-white hover:text-blue-400">Sejarah</a></li>
+                    <li><a href="#perkembangan" class="nav-link text-white hover:text-blue-400">Perkembangan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Definisi AI Section -->
+        <section id="definisi" class="mb-16 card p-8 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-300 section-header">1. Definisi Kecerdasan Buatan (AI)</h2>
+            <p class="mb-4 leading-relaxed">
+                Kecerdasan Buatan (AI) adalah cabang ilmu komputer yang berfokus pada penciptaan mesin yang dapat berpikir, belajar, dan bertindak layaknya manusia. Tujuannya adalah untuk mengembangkan sistem yang mampu melakukan tugas-tugas yang biasanya membutuhkan kecerdasan manusia, seperti penalaran, pemecahan masalah, persepsi, pembelajaran, dan pemahaman bahasa.
+            </p>
+            <p class="mb-4 leading-relaxed">
+                Secara umum, AI dapat dibagi menjadi dua kategori utama:
+            </p>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li>
+                    <strong>AI Lemah (Narrow AI):</strong> Dirancang dan dilatih untuk tugas tertentu. Contohnya termasuk asisten virtual (Siri, Google Assistant), sistem rekomendasi, atau mobil otonom. AI lemah sangat baik dalam tugas spesifiknya tetapi tidak memiliki kesadaran atau kemampuan umum.
+                </li>
+                <li>
+                    <strong>AI Kuat (General AI):</strong> Ini adalah hipotesis AI yang memiliki kecerdasan setara dengan manusia, mampu memahami, belajar, dan menerapkan pengetahuannya untuk menyelesaikan masalah apa pun. AI kuat masih menjadi tujuan penelitian jangka panjang.
+                </li>
+            </ul>
+            <p class="leading-relaxed">
+                Konsep inti di balik AI adalah kemampuan mesin untuk memproses data, mengidentifikasi pola, membuat keputusan, dan beradaptasi berdasarkan pengalaman. Ini melibatkan berbagai teknik seperti pembelajaran mesin (Machine Learning), pembelajaran mendalam (Deep Learning), pemrosesan bahasa alami (Natural Language Processing), dan visi komputer (Computer Vision).
+            </p>
+        </section>
+
+        <!-- Sejarah AI Section -->
+        <section id="sejarah" class="mb-16 card p-8 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-300 section-header">2. Sejarah Singkat Kecerdasan Buatan</h2>
+            <p class="mb-4 leading-relaxed">
+                Gagasan tentang mesin cerdas telah ada selama berabad-abad dalam mitologi dan fiksi. Namun, AI sebagai disiplin ilmiah baru mulai terbentuk pada pertengahan abad ke-20.
+            </p>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li>
+                    <strong>1940-an - 1950-an: Fondasi Awal</strong>
+                    <ul class="list-circle list-inside ml-4 mt-1">
+                        <li><strong>1943:</strong> Warren McCulloch dan Walter Pitts menerbitkan "A Logical Calculus of Ideas Immanent in Nervous Activity," yang mengusulkan model neuron buatan.</li>
+                        <li><strong>1950:</strong> Alan Turing memperkenalkan "Turing Test" dalam makalahnya "Computing Machinery and Intelligence," sebagai kriteria untuk mengukur kecerdasan mesin.</li>
+                        <li><strong>1956:</strong> Konferensi Dartmouth, yang diselenggarakan oleh John McCarthy (yang menciptakan istilah "Artificial Intelligence"), Marvin Minsky, Nathaniel Rochester, dan Claude Shannon, secara luas dianggap sebagai kelahiran bidang AI.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>1960-an - 1970-an: Era Optimisme Awal dan "Musim Dingin AI" Pertama</strong>
+                    <ul class="list-circle list-inside ml-4 mt-1">
+                        <li>Pengembangan program seperti ELIZA (Joseph Weizenbaum) dan SHRDLU (Terry Winograd) menunjukkan potensi pemrosesan bahasa alami.</li>
+                        <li>Keterbatasan komputasi dan data menyebabkan "Musim Dingin AI" pertama, di mana pendanaan dan minat menurun.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>1980-an: Sistem Pakar dan "Musim Dingin AI" Kedua</strong>
+                    <ul class="list-circle list-inside ml-4 mt-1">
+                        <li>Munculnya sistem pakar, program yang meniru proses pengambilan keputusan seorang ahli manusia, membawa kebangkitan minat.</li>
+                        <li>Namun, biaya pemeliharaan dan keterbatasan dalam menangani pengetahuan yang kompleks menyebabkan "Musim Dingin AI" kedua.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>1990-an - Awal 2000-an: Kebangkitan Pembelajaran Mesin</strong>
+                    <ul class="list-circle list-inside ml-4 mt-1">
+                        <li>Fokus bergeser dari sistem berbasis aturan ke pembelajaran mesin, di mana algoritma belajar dari data.</li>
+                        <li>Ketersediaan data yang lebih besar dan peningkatan daya komputasi menjadi pendorong utama.</li>
+                        <li><strong>1997:</strong> Deep Blue IBM mengalahkan juara catur dunia Garry Kasparov.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Perkembangan AI Section -->
+        <section id="perkembangan" class="mb-16 card p-8 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold text-blue-300 section-header">3. Perkembangan dan Tren AI Modern</h2>
+            <p class="mb-4 leading-relaxed">
+                Abad ke-21 telah menyaksikan ledakan dalam perkembangan AI, didorong oleh tiga faktor utama:
+            </p>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li>
+                    <strong>Data Besar (Big Data):</strong> Ketersediaan data dalam jumlah masif dari internet, sensor, dan perangkat lainnya.
+                </li>
+                <li>
+                    <strong>Daya Komputasi:</strong> Peningkatan signifikan dalam kekuatan pemrosesan, terutama dengan GPU (Graphics Processing Units) yang cocok untuk pelatihan model AI.
+                </li>
+                <li>
+                    <strong>Algoritma yang Ditingkatkan:</strong> Inovasi dalam algoritma pembelajaran mesin, terutama pembelajaran mendalam (Deep Learning).
+                </li>
+            </ul>
+            <h3 class="text-2xl font-semibold text-blue-200 mt-6 mb-3">Sub-bidang Utama AI Modern:</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li>
+                    <strong>Pembelajaran Mesin (Machine Learning - ML):</strong> Algoritma yang memungkinkan sistem belajar dari data tanpa diprogram secara eksplisit. Termasuk regresi, klasifikasi, pengelompokan, dll.
+                </li>
+                <li>
+                    <strong>Pembelajaran Mendalam (Deep Learning - DL):</strong> Sub-bidang ML yang menggunakan jaringan saraf tiruan (neural networks) dengan banyak lapisan (deep layers) untuk memodelkan pola kompleks dalam data. Ini adalah pendorong di balik banyak kemajuan AI saat ini.
+                </li>
+                <li>
+                    <strong>Pemrosesan Bahasa Alami (Natural Language Processing - NLP):</strong> Memungkinkan komputer untuk memahami, menafsirkan, dan menghasilkan bahasa manusia. Contoh: terjemahan mesin, chatbot, analisis sentimen.
+                </li>
+                <li>
+                    <strong>Visi Komputer (Computer Vision - CV):</strong> Memungkinkan komputer untuk "melihat" dan menafsirkan gambar dan video. Contoh: pengenalan wajah, mobil otonom, analisis citra medis.
+                </li>
+                <li>
+                    <strong>Robotika:</strong> Integrasi AI dengan robot untuk memungkinkan mereka berinteraksi dengan dunia fisik secara cerdas.
+                </li>
+            </ul>
+            <h3 class="text-2xl font-semibold text-blue-200 mt-6 mb-3">Aplikasi AI Saat Ini:</h3>
+            <p class="mb-4 leading-relaxed">
+                AI telah meresap ke berbagai aspek kehidupan kita:
+            </p>
+            <ul class="list-disc list-inside ml-4 mb-4 space-y-2">
+                <li><strong>Kesehatan:</strong> Diagnosis penyakit, penemuan obat, perawatan personalisasi.</li>
+                <li><strong>Keuangan:</strong> Deteksi penipuan, perdagangan algoritmik, analisis risiko.</li>
+                <li><strong>Transportasi:</strong> Mobil otonom, optimasi rute.</li>
+                <li><strong>E-commerce:</strong> Sistem rekomendasi, personalisasi pengalaman belanja.</li>
+                <li><strong>Hiburan:</strong> Rekomendasi konten, pembuatan seni dan musik.</li>
+                <li><strong>Pendidikan:</strong> Pembelajaran adaptif, penilaian otomatis.</li>
+            </ul>
+            <p class="leading-relaxed">
+                Masa depan AI menjanjikan lebih banyak inovasi, dengan penelitian yang terus berlanjut di bidang-bidang seperti AI yang dapat dijelaskan (Explainable AI), etika AI, dan AI generatif yang mampu menciptakan konten baru.
+            </p>
+        </section>
+    </main>
+
+    <footer class="gradient-bg py-6 mt-12 rounded-t-lg tech-accent">
+        <div class="container mx-auto px-4 text-center text-gray-300">
+            <p>&copy; 2025 AI Learning Hub. All rights reserved.</p>
+            <p class="text-sm mt-2">Dibuat dengan semangat teknologi.</p>
+        </div>
+    </footer>
+</body>
+</html>
